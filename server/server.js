@@ -1,6 +1,9 @@
 const express = require("express");
+const cors = require ("cors")
 
 const app = express();
+
+app.use(cors());
 
 const products = [
     {id:0, name:"bread", price:10.00},
